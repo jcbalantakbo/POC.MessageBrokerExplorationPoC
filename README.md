@@ -7,9 +7,13 @@ Queue Message processor
 
 Todo:
 **Create a Topic**
+
 Create numerous subscriber for the topic
+
 Process the messages on the topic
 
 **Create RabbitMQ Message broker**
+
 ..
+
 ..
