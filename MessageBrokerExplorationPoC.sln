@@ -5,6 +5,22 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureServiceBusQueueSenderDemo", "AzureServiceBusQueueSenderDemo\AzureServiceBusQueueSenderDemo.csproj", "{00D66CCD-FBFF-45ED-A568-7C1C8A5012BA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureServiceBusQueueReceiverDemo", "AzureServiceBusQueueReceiverDemo\AzureServiceBusQueueReceiverDemo.csproj", "{F481CECE-4B68-401B-8556-A731B87BF23E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureServiceBusQueuePOC", "AzureServiceBusQueuePOC", "{D9192192-B99F-45BE-AF35-1E3B31C8C107}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureServiceBusTopicPOC", "AzureServiceBusTopicPOC", "{7A5E258B-9CC6-4F0C-873A-44F536176337}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQPOC", "RabbitMQPOC", "{E81E3AA3-DA6B-474B-A536-6B173A641AF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureServiceBusQueueMessageSessionSenderDemo", "AzureServiceBusQueueUsingMessageSessionDemo\AzureServiceBusQueueMessageSessionSenderDemo.csproj", "{D91E240B-19BD-447F-BC6E-B8ED90613533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureServiceBusQueueMessageSessionReceiverDemo", "AzureServiceBusQueueMessageSessionReceiverDemo\AzureServiceBusQueueMessageSessionReceiverDemo.csproj", "{9B35A9F8-6B97-4A28-9DEB-2887044897BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureServiceBusQueueMessageSessionPOC", "AzureServiceBusQueueMessageSessionPOC", "{3BCAD59F-3918-45DE-9205-B1FB67431396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBrokerExplorationPOCLibrary", "MessageBrokerExplorationPOCLibrary\MessageBrokerExplorationPOCLibrary.csproj", "{D22CD552-3629-40F4-BE93-B350F9C37C54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +31,31 @@ Global
 		{00D66CCD-FBFF-45ED-A568-7C1C8A5012BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00D66CCD-FBFF-45ED-A568-7C1C8A5012BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00D66CCD-FBFF-45ED-A568-7C1C8A5012BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F481CECE-4B68-401B-8556-A731B87BF23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F481CECE-4B68-401B-8556-A731B87BF23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F481CECE-4B68-401B-8556-A731B87BF23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F481CECE-4B68-401B-8556-A731B87BF23E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91E240B-19BD-447F-BC6E-B8ED90613533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91E240B-19BD-447F-BC6E-B8ED90613533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91E240B-19BD-447F-BC6E-B8ED90613533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91E240B-19BD-447F-BC6E-B8ED90613533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B35A9F8-6B97-4A28-9DEB-2887044897BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B35A9F8-6B97-4A28-9DEB-2887044897BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B35A9F8-6B97-4A28-9DEB-2887044897BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B35A9F8-6B97-4A28-9DEB-2887044897BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D22CD552-3629-40F4-BE93-B350F9C37C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D22CD552-3629-40F4-BE93-B350F9C37C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D22CD552-3629-40F4-BE93-B350F9C37C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D22CD552-3629-40F4-BE93-B350F9C37C54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00D66CCD-FBFF-45ED-A568-7C1C8A5012BA} = {D9192192-B99F-45BE-AF35-1E3B31C8C107}
+		{F481CECE-4B68-401B-8556-A731B87BF23E} = {D9192192-B99F-45BE-AF35-1E3B31C8C107}
+		{D91E240B-19BD-447F-BC6E-B8ED90613533} = {3BCAD59F-3918-45DE-9205-B1FB67431396}
+		{9B35A9F8-6B97-4A28-9DEB-2887044897BD} = {3BCAD59F-3918-45DE-9205-B1FB67431396}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6278731B-BEDA-43F7-AA47-5FD076F245D6}
